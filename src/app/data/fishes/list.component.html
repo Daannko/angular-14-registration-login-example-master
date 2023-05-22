@@ -1,0 +1,27 @@
+﻿<h1>All Cought Fishes</h1>
+<body>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width: 30%">Species</th>
+            <th style="width: 30%">Weight</th>
+            <th style="width: 30%">User</th>
+            <th style="width: 10%">Lake</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let fish of fishes">
+            <td>{{fish.fish.species}}</td>
+            <td>{{fish.fish.weight}}</td>
+            <td>{{fish.userNameAndSurname}}</td>
+            <td>{{fish.lakeName}}</td>
+        </tr>
+        <tr *ngIf="!fishes">
+            <td colspan="4" class="text-center">
+                <span class="spinner-border spinner-border-lg align-center"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
