@@ -2,7 +2,20 @@
 <html>
 <head>
     <base href="/" />
-    <title>Angular 14 - User Registration and Login Example</title>
+    <title>Login</title>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Course",
+         "name": "course.name",
+        "description": "{{course.description}}",
+        "instructor": {
+          "@type": "Person",
+          "name": "{{course.instructor}}"
+        },
+        "startDate": "{{course.date}}"
+      }
+      </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- bootstrap css -->

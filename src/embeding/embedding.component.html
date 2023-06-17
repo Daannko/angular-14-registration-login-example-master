@@ -1,0 +1,26 @@
+﻿<div class="p-4">
+  <div class="container">
+    <div class="inner" vocab="http://schema.org/" typeof="Course">
+      <span property="name">
+        <h2>{{ course.name }}</h2>
+      </span>
+      <span property="instructor" href="#instructor">
+        <div resource="#instructor" typeof="Person">
+          <span property="name">
+            <h3>{{ course.instructor }}</h3>
+          </span>
+        </div>
+      </span>
+      <span property="startDate" href="#startDate">
+        <div resource="#startDate" typeof="Date">
+          <span property="date">
+            <h3>{{ course.startDate }}</h3>
+          </span>
+        </div>
+      </span>
+      <span property="description">
+        <p>{{ course.description }}</p>
+      </span>
+    </div>
+  </div>
+</div>

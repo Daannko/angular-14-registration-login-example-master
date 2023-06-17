@@ -11,7 +11,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let fish of fishes">
-            <td>{{fish.fish.species}}</td>
+            <td><a [routerLink]="'/fish/' + fish.fish.id" routerLinkActive="active">{{ fish.fish.species }}</a></td>
             <td>{{fish.fish.weight}}</td>
             <td>{{fish.userNameAndSurname}}</td>
             <td>{{fish.lakeName}}</td>
